@@ -56,6 +56,24 @@ function takeCommand(message) {
     } else if (message.includes("open facebook")) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
+    }else if (message.includes("open instagram")) {
+        window.open("https://instagram.com", "_blank");
+        speak("Opening instagram...");
+    }else if (message.includes("open my facebook")) {
+        window.open("https://www.facebook.com/share/1DjDNi3JQu/", "_blank");
+        speak("Opening your Facebook...");
+    }else if (message.includes("open my instagram")) {
+        window.open("https://www.instagram.com/__hindu__naveen__?igsh=MWdhY3F6M2tud21pMQ==", "_blank");
+        speak("Opening your instagram...");
+    }else if (message.includes("open my github")) {
+        window.open("https://github.com/naveenk1437", "_blank");
+        speak("Opening your github...");
+    }else if (message.includes("open my linkedin")) {
+        window.open("https://www.linkedin.com/in/naveen-kumar-311a5b2b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank");
+        speak("Opening your linkedin...");    
+    }else if (message.includes("open my portfolio")) {
+        window.open("https://naveen1437.netlify.app", "_blank");
+        speak("Opening your Portfolio...");
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
